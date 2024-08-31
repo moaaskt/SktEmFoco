@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/galera.css">
+</head>
+<body>
+     <!-- Toolbar Responsiva -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid"> <!-- Usar container-fluid para expandir a largura -->
+            <a class="navbar-brand" href="#">
+                <img src="../img/as-removebg-preview.png" alt="Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobremim.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Galeria de Fotos -->
+    <section class="container mt-5">
+        <h1 class="mb-4 text-center">Galeria de Fotos</h1>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="../img/avs1.jpg" class="img-fluid rounded" alt="Evento 1" data-bs-toggle="modal" data-bs-target="#modalEvento1">
+            </div>
+            <div class="col-md-4">
+                <img src="../img/club2.jpg" class="img-fluid rounded" alt="Evento 2" data-bs-toggle="modal" data-bs-target="#modalEvento2">
+            </div>
+            <div class="col-md-4">
+                <img src="../img/mag1.png" class="img-fluid rounded" alt="Evento 3" data-bs-toggle="modal" data-bs-target="#modalEvento3">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modais para Eventos -->
+    <div class="modal fade" id="modalEvento1" tabindex="-1" aria-labelledby="modalEvento1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEvento1Label">Evento 1 - Camp Mari</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselEvento1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.ibb.co/hH08FGR/919087-278451488979261-618378240-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/7RFTLSX/1483669-278453712312372-411294459-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/RTXY5xg/1496103-278453568979053-2063802778-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/Fx34KrT/thumbnail-1507972-493458037440961-932671642-n.jpg" class="d-block w-100" alt="Evento 1 - Imagem 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/17HSxpF/thumbnail-SANY3292.jpg" class="d-block w-100" alt="Evento 1 - Imagem 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/D1pbw47/1.jpg" class="d-block w-100" alt="Evento 1 - Imagem 6">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/bs5q8pn/2.jpg" class="d-block w-100" alt="Evento 1 - Imagem 7">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/hBQQbJq/3.jpg" class="d-block w-100" alt="Evento 1 - Imagem 8">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/9NkzGC8/4.jpg" class="d-block w-100" alt="Evento 1 - Imagem 9">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/VpcR68P/5.jpg" class="d-block w-100" alt="Evento 1 - Imagem 10">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/WxHbTVw/6.jpg" class="d-block w-100" alt="Evento 1 - Imagem 11">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/SQYbwKD/7.jpg" class="d-block w-100" alt="Evento 1 - Imagem 12">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/7QF8th4/8.jpg" class="d-block w-100" alt="Evento 1 - Imagem 13">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.ibb.co/4JmHHv4/11.jpg" class="d-block w-100" alt="Evento 1 - Imagem 14">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p><strong>Data:</strong> 10 de Julho de 2023</p>
+                    <p><strong>Local:</strong> Parque Central</p>
+                    <p><strong>Descrição:</strong> O Camp Mari foi um evento emocionante com uma competição de skate entre jovens talentos. O dia foi marcado por manobras impressionantes e um grande público.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalEvento2" tabindex="-1" aria-labelledby="modalEvento2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEvento2Label">Evento 2 - Club</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselEvento2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/club2-gallery1.jpg" class="d-block w-100" alt="Evento 2 - Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/club2-gallery2.jpg" class="d-block w-100" alt="Evento 2 - Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/club2-gallery3.jpg" class="d-block w-100" alt="Evento 2 - Imagem 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p><strong>Data:</strong> 15 de Agosto de 2023</p>
+                    <p><strong>Local:</strong> Skatepark Club</p>
+                    <p><strong>Descrição:</strong> O Club foi um evento noturno que trouxe uma série de desafios e competições de skate em um ambiente vibrante e enérgico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalEvento3" tabindex="-1" aria-labelledby="modalEvento3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEvento3Label">Evento 3 - Mag</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselEvento3" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/mag1-gallery1.jpg" class="d-block w-100" alt="Evento 3 - Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/mag1-gallery2.jpg" class="d-block w-100" alt="Evento 3 - Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/mag1-gallery3.jpg" class="d-block w-100" alt="Evento 3 - Imagem 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p><strong>Data:</strong> 20 de Setembro de 2023</p>
+                    <p><strong>Local:</strong> Praça da Juventude</p>
+                    <p><strong>Descrição:</strong> O Mag foi um evento dinâmico com uma série de apresentações e competições de skate. Foi um dia cheio de adrenalina e talentos impressionantes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML('beforeend', data);
+                });
+        });
+    </script>
+    
+</body>
+</html>
