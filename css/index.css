@@ -15,10 +15,19 @@ body {
     flex-direction: row;
 }
 
-.navbar-nav .nav-item {
-    margin-left: 15px;
-    margin-right: 15px;
+.navbar-custom {
+    background-color: #000000; /* Fundo preto */
 }
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #FFFFFF; /* Cor dos links em branco */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #8A2BE2; /* Cor dos links ao passar o mouse ou ativo */
+}
+
 
 /* Foto de Tela Cheia */
 .fullscreen-photo {
@@ -37,7 +46,7 @@ body {
 
 /* Seção de Eventos */
 #eventos h2{
-    color: #ffffff;
+    color: #8A2BE2; /* Título em roxo */
 }
 
 #eventos {
@@ -58,7 +67,9 @@ body {
 #eventos img:hover {
     transform: scale(1.03);
 }
-
+#eventos .img-fluid {
+    border: 2px solid #8A2BE2; /* Borda roxa ao redor das imagens */
+}
 /* Seção de Vídeos */
 
 #videos-eventos iframe {
@@ -66,6 +77,11 @@ body {
     height: 315px;
     border: none;
 }
+/* Estilo para a seção de vídeos */
+#videos-eventos h2 {
+    color: #8A2BE2; /* Título em roxo */
+}
+
 
 @media (max-width: 768px) {
     #videos-eventos iframe {
@@ -97,15 +113,25 @@ body {
     border: 0;
 }
 /* Ajustes no Footer */
+
+
 footer {
     margin-top: auto;
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
 }
 
 footer a {
-    color: #ffffff;
+    color: #8A2BE2;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #cccccc;
+    color: #FFFFFF;
+}
+
+/* Geral */
+body {
+    background-color: #1A1A1A; /* Cor de fundo cinza escuro para o corpo do site */
+    color: #FFFFFF; /* Cor padrão do texto em branco */
 }
