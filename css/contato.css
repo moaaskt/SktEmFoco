@@ -4,6 +4,10 @@ body {
 .navbar {
     margin-bottom: 20px;
     margin-bottom: 0;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .navbar-nav {
@@ -16,28 +20,44 @@ body {
 }
 h1 {
     font-size: 2.5rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #8A2BE2;
+    
 }
 
 form {
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(117, 10, 238, 0.1);
 }
 
 button {
     font-size: 1.2rem;
 }
 
+/* Ajustes no Footer */
+
+
 footer {
     margin-top: auto;
+    background-color: #000000; /* Fundo preto */
+    color: #FFFFFF; /* Texto branco */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer a {
-    color: #ffffff;
+    color: #8A2BE2;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #cccccc;
+    color: #FFFFFF;
 }
+

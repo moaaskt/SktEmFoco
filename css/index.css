@@ -1,13 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    background-color: #1A1A1A; /* Cor de fundo cinza escuro para o corpo do site */
+    color: #FFFFFF; /* Cor padrão do texto em branco */
 }
 
 .navbar {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-bottom: 0;
 }
 
@@ -15,24 +20,15 @@ body {
     flex-direction: row;
 }
 
-.navbar-custom {
-    background-color: #000000; /* Fundo preto */
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    margin-right: 15px;
 }
-
-.navbar-custom .navbar-nav .nav-link {
-    color: #FFFFFF; /* Cor dos links em branco */
-}
-
-.navbar-custom .navbar-nav .nav-link:hover,
-.navbar-custom .navbar-nav .nav-link.active {
-    color: #8A2BE2; /* Cor dos links ao passar o mouse ou ativo */
-}
-
 
 /* Foto de Tela Cheia */
 .fullscreen-photo {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -47,6 +43,7 @@ body {
 /* Seção de Eventos */
 #eventos h2{
     color: #8A2BE2; /* Título em roxo */
+    
 }
 
 #eventos {
@@ -68,7 +65,7 @@ body {
     transform: scale(1.03);
 }
 #eventos .img-fluid {
-    border: 2px solid #8A2BE2; /* Borda roxa ao redor das imagens */
+    border: 2px solid #eeeaf1; /* Borda roxa ao redor das imagens */
 }
 /* Seção de Vídeos */
 
@@ -119,6 +116,10 @@ footer {
     margin-top: auto;
     background-color: #000000; /* Fundo preto */
     color: #FFFFFF; /* Texto branco */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer a {
@@ -130,8 +131,3 @@ footer a:hover {
     color: #FFFFFF;
 }
 
-/* Geral */
-body {
-    background-color: #1A1A1A; /* Cor de fundo cinza escuro para o corpo do site */
-    color: #FFFFFF; /* Cor padrão do texto em branco */
-}
