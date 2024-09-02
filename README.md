@@ -2,6 +2,8 @@
 
 **SktEmFoco** é um portfólio de skate desenvolvido para exibir eventos de skate realizados, fornecer informações sobre o organizador e possibilitar o contato direto. O site é construído utilizando HTML, CSS, JavaScript e Bootstrap 5, com uma abordagem moderna e visualmente atraente.
 
+![Screenshot do Portfólio](https://ibb.co/NWzvLYh) <!-- Substitua pelo link de uma captura de tela real -->
+
 ## Descrição
 
 O **SktEmFoco** oferece uma visão completa dos eventos de skate organizados, com galeria de fotos e vídeos, além de informações sobre o organizador e um formulário de contato. O site é responsivo e projetado para oferecer uma experiência de usuário consistente em dispositivos desktop e móveis.
