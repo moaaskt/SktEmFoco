@@ -18,34 +18,23 @@ body {
     margin-right: 15px;
 }
 /* Seção Sobre Mim */
-#sobre-mim {
-    background-color: #f8f9fa; /* Cor de fundo clara */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.image-container img {
+    transition: transform 0.5s ease;
+}
+.image-container:hover img {
+    transform: rotateY(15deg);
+}
+.carousel-caption {
+    bottom: 20px;
 }
 
-#carouselSobreMim img {
-    object-fit: cover;
-    height: 400px; /* Altura fixa para as imagens do carrossel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000;
 }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Cor do fundo dos controles */
-    border-radius: 50%;
-}
-
-/* Texto */
-#sobre-mim h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #8A2BE2;
-}
-
-#sobre-mim p {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 19px;
-    line-height: 1.6;
-    color: #333;
+.sobre-mim-texto {
+    font-family: 'Merriweather', sans-serif;
 }
