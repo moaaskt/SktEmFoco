@@ -41,17 +41,24 @@
 
 <!-- Foto de Tela Cheia -->
 <header class="fullscreen-photo">
-    <img src="img/6.jpg" class="img-fluid" alt="Foto de Tela Cheia">
+    <div class="photo-container">
+        <img src="img/6.jpg" class="img-fluid" alt="Foto 1">
+        <img src="img/WhatsApp Image 2024-08-29 at 20.16.51.jpeg" class="img-fluid" alt="Foto 2">
+        <img src="img/25.jpg" class="img-fluid" alt="Foto 3">
+        <img src="img/24.jpg" class="img-fluid" alt="Foto 4">
+        <img src="img/27.jpg" class="img-fluid" alt="Foto 5">
+    </div>
 </header>
 
+
 <!-- Seção de Eventos -->
+
 <section id="eventoss" class="container-fluid mt-0">
     <h2 class="text-center mb-4">Próximos Eventos</h2>
    
     <h3 class="moving-text">Em Breve</h3>
 
 </section>
-
 
 <!-- Seção de Eventos -->
 <section id="eventos" class="container-fluid mt-0">
@@ -131,6 +138,20 @@
             .then(data => {
                 document.body.insertAdjacentHTML('beforeend', data);
             });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const photos = document.querySelectorAll('.photo-container img');
+        let current = 0;
+
+        function showNextPhoto() {
+            photos[current].classList.remove('active');
+            current = (current + 1) % photos.length;
+            photos[current].classList.add('active');
+        }
+
+        photos[current].classList.add('active');
+        setInterval(showNextPhoto, 3000); // Altere o tempo de transição (3000ms = 3s)
     });
 </script>
 
