@@ -80,6 +80,31 @@ body {
 #eventos .img-fluid {
     border: 2px solid #eeeaf1; /* Borda roxa ao redor das imagens */
 }
+
+/* Estilo para o texto em movimento */
+.moving-text {
+    /* display: inline-block; */
+    white-space: nowrap;
+    animation: moveText 5s linear infinite;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; /* Mude a cor conforme o design do site */
+    position: relative; /* Mantém o texto na posição correta */
+}
+
+/* Animação para mover o texto pela tela */
+@keyframes moveText {
+    0% {
+        transform: translateX(100%); /* Começa fora da tela à direita */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina fora da tela à esquerda */
+    }
+}
+
+
+
+
 /* Seção de Vídeos */
 
 #videos-eventos iframe {
