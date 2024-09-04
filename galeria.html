@@ -1,575 +1,1323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria de Fotos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<!-- font  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- link css  -->
-    <link rel="stylesheet" href="../css/galera.css">
-    
+    <!-- link css  -->
+    <link rel="stylesheet" href="../css/galera.css" />
+
     <!-- icon  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/gff.jpg">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/gff.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/gff.jpg">
-    <link rel="manifest" href="img/gff.jpg">
-</head>
-<body>
-     <!-- Toolbar Responsiva -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid"> <!-- Usar container-fluid para expandir a largura -->
-            <a class="navbar-brand" href="#">
-                <img src="img/SKATE-EM-FOCO-02-09-2024 (2).png" alt="Logo" style="height: 60px;"> <!-- Ajuste a altura conforme necessário -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="galeria.html">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobremim.html">Sobre Mim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                </ul>
-            </div>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/gff.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/gff.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/gff.jpg" />
+    <link rel="manifest" href="img/gff.jpg" />
+  </head>
+  <body>
+    <!-- Toolbar Responsiva -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Usar container-fluid para expandir a largura -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/SKATE-EM-FOCO-02-09-2024 (2).png"
+            alt="Logo"
+            style="height: 60px"
+          />
+          <!-- Ajuste a altura conforme necessário -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobremim.html">Sobre Mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
     <!-- Galeria de Fotos -->
+  
     <section class="container mt-5">
-        <h1 class="mb-4 text-center">Galeria de Fotos</h1>
-        <div class="row g-5">
-            <div class="col-md-4">
-                <img src="img/avs1.jpg" class="img-fluid rounded" alt="Evento 1" data-bs-toggle="modal" data-bs-target="#modalEvento1">
-            </div>
-            <div class="col-md-4">
-                <img src="https://i.ibb.co/89gcTHF/26678073-1315246891915015-629383066378670467-o.jpg" class="img-fluid rounded" alt="Evento 2" data-bs-toggle="modal" data-bs-target="#modalEvento2">
-            </div>
-            <div class="col-md-4">
-                <img src="img/capgo.jpg" class="img-fluid rounded" alt="Evento 3" data-bs-toggle="modal" data-bs-target="#modalEvento3">
-            </div>
-            <div class="col-md-4">
-                <img src="img/club2.jpg" class="img-fluid rounded" alt="Evento 4" data-bs-toggle="modal" data-bs-target="#modalEvento4">
-            </div>
-            <div class="col-md-4">
-                <img src="img/mag1.png" class="img-fluid rounded" alt="Evento 5" data-bs-toggle="modal" data-bs-target="#modalEvento5">
-            </div>
-            <div class="col-md-4">
-                <img src="img/camp mari.jpg" class="img-fluid rounded" alt="Evento 6" data-bs-toggle="modal" data-bs-target="#modalEvento6">
-            </div>
-            <div class="col-md-4">
-                <img src="img/de ajudar quem precisa.png" class="img-fluid rounded" alt="Evento 7" data-bs-toggle="modal" data-bs-target="#modalEvento7">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mb-4" style="color: #8e44ad;">Galeria de Eventos</h1> >
+                <p class="lead" style="color: #f1f7f3;">Confira os melhores momentos dos nossos eventos de skate</p> 
             </div>
         </div>
     </section>
     
+
+    <section class="container mt-5">
+      <div class="row g-4">
+        <!-- Foto 1 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/avs1.jpg"
+              class="img-fluid rounded"
+              alt="Evento 1"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento1"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 1</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 2 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="https://i.ibb.co/89gcTHF/26678073-1315246891915015-629383066378670467-o.jpg"
+              class="img-fluid rounded"
+              alt="Evento 2"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento2"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 2</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 3 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/capgo.jpg"
+              class="img-fluid rounded"
+              alt="Evento 3"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento3"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 3</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 4 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/club2.jpg"
+              class="img-fluid rounded"
+              alt="Evento 4"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento4"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 4</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 5 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/mag1.png"
+              class="img-fluid rounded"
+              alt="Evento 5"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento5"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 5</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 6 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/camp mari.jpg"
+              class="img-fluid rounded"
+              alt="Evento 6"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento6"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 6</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Foto 7 -->
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img
+              src="img/de ajudar quem precisa.png"
+              class="img-fluid rounded"
+              alt="Evento 7"
+              data-bs-toggle="modal"
+              data-bs-target="#modalEvento7"
+            />
+            <div
+              class="gallery-overlay d-flex align-items-center justify-content-center"
+            >
+              <h5 class="text-white">Evento 7</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Modais para Eventos -->
 
-
     <!-- evento avs 1 -->
-    <div class="modal fade" id="modalEvento1" tabindex="-1" aria-labelledby="modalEvento1Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalEvento1Label">1º Campeonato Valadarense de Skate</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="modalEvento1"
+      tabindex="-1"
+      aria-labelledby="modalEvento1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento1Label">
+              1º Campeonato Valadarense de Skate
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento1" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/hH08FGR/919087-278451488979261-618378240-o.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 1"
+                  />
                 </div>
-                <div class="modal-body">
-                    <div id="carouselEvento1" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://i.ibb.co/hH08FGR/919087-278451488979261-618378240-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/7RFTLSX/1483669-278453712312372-411294459-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/RTXY5xg/1496103-278453568979053-2063802778-o.jpg" class="d-block w-100" alt="Evento 1 - Imagem 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/Fx34KrT/thumbnail-1507972-493458037440961-932671642-n.jpg" class="d-block w-100" alt="Evento 1 - Imagem 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/17HSxpF/thumbnail-SANY3292.jpg" class="d-block w-100" alt="Evento 1 - Imagem 5">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/D1pbw47/1.jpg" class="d-block w-100" alt="Evento 1 - Imagem 6">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/bs5q8pn/2.jpg" class="d-block w-100" alt="Evento 1 - Imagem 7">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/hBQQbJq/3.jpg" class="d-block w-100" alt="Evento 1 - Imagem 8">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/9NkzGC8/4.jpg" class="d-block w-100" alt="Evento 1 - Imagem 9">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/VpcR68P/5.jpg" class="d-block w-100" alt="Evento 1 - Imagem 10">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/WxHbTVw/6.jpg" class="d-block w-100" alt="Evento 1 - Imagem 11">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/SQYbwKD/7.jpg" class="d-block w-100" alt="Evento 1 - Imagem 12">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/7QF8th4/8.jpg" class="d-block w-100" alt="Evento 1 - Imagem 13">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/4JmHHv4/11.jpg" class="d-block w-100" alt="Evento 1 - Imagem 14">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <p><strong>Data:</strong>  21 e 22 de Dezembro de 2017</p>
-                    <p><strong>Local:</strong> Pista da Feira da Paz - Governador Valadares - MG</p>
-                    <p><strong>Descrição:</strong> O Primeiro Campeonato AVS foi um marco na comunidade de skate local, reunindo talentos emergentes e skatistas experientes em um dia de muita adrenalina e diversão. O evento contou com um público animado, sorteios e prêmios para os vencedores das categorias Amador, Iniciante , Mirim e Best Trick.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/7RFTLSX/1483669-278453712312372-411294459-o.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 2"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/RTXY5xg/1496103-278453568979053-2063802778-o.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Fx34KrT/thumbnail-1507972-493458037440961-932671642-n.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/17HSxpF/thumbnail-SANY3292.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/D1pbw47/1.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/bs5q8pn/2.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/hBQQbJq/3.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/9NkzGC8/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/VpcR68P/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/WxHbTVw/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/SQYbwKD/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 12"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/7QF8th4/8.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 13"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/4JmHHv4/11.jpg"
+                    class="d-block w-100"
+                    alt="Evento 1 - Imagem 14"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 21 e 22 de Dezembro de 2017</p>
+            <p>
+              <strong>Local:</strong> Pista da Feira da Paz - Governador
+              Valadares - MG
+            </p>
+            <p>
+              <strong>Descrição:</strong> O Primeiro Campeonato AVS foi um marco
+              na comunidade de skate local, reunindo talentos emergentes e
+              skatistas experientes em um dia de muita adrenalina e diversão. O
+              evento contou com um público animado, sorteios e prêmios para os
+              vencedores das categorias Amador, Iniciante , Mirim e Best Trick.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- modal camp avs 2  -->
-    
-    
-    <div class="modal fade" id="modalEvento2" tabindex="-1" aria-labelledby="modalEvento2Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalEvento2Label">2º Campeonato Valadarense de Skate</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <div
+      class="modal fade"
+      id="modalEvento2"
+      tabindex="-1"
+      aria-labelledby="modalEvento2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento2Label">
+              2º Campeonato Valadarense de Skate
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/Nxt2zR0/3.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 1"
+                  />
                 </div>
-                <div class="modal-body">
-                    <div id="carouselEvento2" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://i.ibb.co/Nxt2zR0/3.jpg" class="d-block w-100" alt="Evento 2 - Imagem 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/znypzfG/333.jpg" class="d-block w-100" alt="Evento 2 - Imagem 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/8dQsrHt/4.jpg" class="d-block w-100" alt="Evento 2 - Imagem 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/YXcvd1f/5.jpg" class="d-block w-100" alt="Evento 2 - Imagem 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/m9NB47b/6.jpg" class="d-block w-100" alt="Evento 2 - Imagem 5">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/17nckPD/7.jpg" class="d-block w-100" alt="Evento 2 - Imagem 6">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/vHpFr5P/8.jpg" class="d-block w-100" alt="Evento 2 - Imagem 7">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/7JwZ9Vc/9.jpg" class="d-block w-100" alt="Evento 2 - Imagem 8">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/SmP808T/10.jpg" class="d-block w-100" alt="Evento 2 - Imagem 9">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/bdPR77T/12.jpg" class="d-block w-100" alt="Evento 2 - Imagem 10">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/GRfmn7t/14.jpg" class="d-block w-100" alt="Evento 2 - Imagem 11">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/grbYHgH/15.jpg" class="d-block w-100" alt="Evento 2 - Imagem 12">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/Mp5Mf7b/24991475-1283773761728995-5813343978299154963-n.jpg" class="d-block w-100" alt="Evento 2 - Imagem 13">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/Pm14BLz/27024310-1327678624005175-2940991915717009017-o.jpg" class="d-block w-100" alt="Evento 2 - Imagem 14">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/xMNK716/27073203-1640527022672983-6606370204856773842-n.jpg" class="d-block w-100" alt="Evento 2 - Imagem 15">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <p><strong>Data:</strong>  21 e 22 de Dezembro de 2017</p>
-                    <p><strong>Local:</strong> Pista da Feira da Paz - Governador Valadares - MG</p>
-                    <p><strong>Descrição:</strong> O Primeiro Campeonato AVS foi um marco na comunidade de skate local, reunindo talentos emergentes e skatistas experientes em um dia de muita adrenalina e diversão. O evento contou com um público animado, sorteios e prêmios para os vencedores das categorias Amador, Iniciante , Mirim e Best Trick.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/znypzfG/333.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 2"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/8dQsrHt/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/YXcvd1f/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/m9NB47b/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/17nckPD/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/vHpFr5P/8.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/7JwZ9Vc/9.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/SmP808T/10.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/bdPR77T/12.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/GRfmn7t/14.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/grbYHgH/15.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 12"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Mp5Mf7b/24991475-1283773761728995-5813343978299154963-n.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 13"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Pm14BLz/27024310-1327678624005175-2940991915717009017-o.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 14"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/xMNK716/27073203-1640527022672983-6606370204856773842-n.jpg"
+                    class="d-block w-100"
+                    alt="Evento 2 - Imagem 15"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 21 e 22 de Dezembro de 2017</p>
+            <p>
+              <strong>Local:</strong> Pista da Feira da Paz - Governador
+              Valadares - MG
+            </p>
+            <p>
+              <strong>Descrição:</strong> O Primeiro Campeonato AVS foi um marco
+              na comunidade de skate local, reunindo talentos emergentes e
+              skatistas experientes em um dia de muita adrenalina e diversão. O
+              evento contou com um público animado, sorteios e prêmios para os
+              vencedores das categorias Amador, Iniciante , Mirim e Best Trick.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    
-    
+
     <!-- modal go day skate  -->
-    <div class="modal fade" id="modalEvento3" tabindex="-1" aria-labelledby="modalEvento3Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalEvento3Label">Go Skate Day GV</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal fade"
+      id="modalEvento3"
+      tabindex="-1"
+      aria-labelledby="modalEvento3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento3Label">Go Skate Day GV</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/vVpcGW4/1.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 1"
+                  />
                 </div>
-                <div class="modal-body">
-                    <div id="carouselEvento3" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://i.ibb.co/vVpcGW4/1.jpg" class="d-block w-100" alt="Evento 3 - Imagem 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/r4Zgsk7/2.jpg" class="d-block w-100" alt="Evento 3 - Imagem 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/D5nkzyk/3.jpg" class="d-block w-100" alt="Evento 3 - Imagem 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/TRGFG6H/4.jpg" class="d-block w-100" alt="Evento 3 - Imagem 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/58bKGjx/5.jpg" class="d-block w-100" alt="Evento 3 - Imagem 5">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/hY1L8Hy/6.jpg" class="d-block w-100" alt="Evento 3 - Imagem 6">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/XDMNcMD/7.jpg" class="d-block w-100" alt="Evento 3 - Imagem 7">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/G5X99zy/9.jpg" class="d-block w-100" alt="Evento 3 - Imagem 8">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/nRZ0gFG/10.jpg" class="d-block w-100" alt="Evento 3 - Imagem 9">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/rHq2xg2/12.jpg" class="d-block w-100" alt="Evento 3 - Imagem 10">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/ZWXn2c1/13.jpg" class="d-block w-100" alt="Evento 3 - Imagem 11">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/Jkjrbxm/15.jpg" class="d-block w-100" alt="Evento 3 - Imagem 12">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/8j9HFgQ/16.jpg" class="d-block w-100" alt="Evento 3 - Imagem 13">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/JxQm8wg/17.jpg" class="d-block w-100" alt="Evento 3 - Imagem 14">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/4p39Z6H/18.jpg" class="d-block w-100" alt="Evento 3 - Imagem 15">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/6b6Vgtf/22.jpg" class="d-block w-100" alt="Evento 3 - Imagem 16">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/41LCpj3/2323.jpg" class="d-block w-100" alt="Evento 3 - Imagem 16">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento3" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento3" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <p><strong>Data:</strong> 23 de Junho de 2013</p>
-                    <p><strong>Local:</strong> Praça da Estação, Passeata até a Pista de Skate da Feira da Paz</p>
-                    <p><strong>Descrição:</strong> No Go Day Skate, skatistas se reuniram em uma passeata que começou na Praça da Estação e terminou na Pista de Skate da Feira da Paz. O evento foi uma combinação de protesto e comemoração pelo Dia do Skate, com uma grande quantidade de manobras e uma forte presença da comunidade skatista.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/r4Zgsk7/2.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 2"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/D5nkzyk/3.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/TRGFG6H/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/58bKGjx/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/hY1L8Hy/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/XDMNcMD/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/G5X99zy/9.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/nRZ0gFG/10.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/rHq2xg2/12.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/ZWXn2c1/13.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Jkjrbxm/15.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 12"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/8j9HFgQ/16.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 13"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/JxQm8wg/17.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 14"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/4p39Z6H/18.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 15"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/6b6Vgtf/22.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 16"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/41LCpj3/2323.jpg"
+                    class="d-block w-100"
+                    alt="Evento 3 - Imagem 16"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 23 de Junho de 2013</p>
+            <p>
+              <strong>Local:</strong> Praça da Estação, Passeata até a Pista de
+              Skate da Feira da Paz
+            </p>
+            <p>
+              <strong>Descrição:</strong> No Go Day Skate, skatistas se reuniram
+              em uma passeata que começou na Praça da Estação e terminou na
+              Pista de Skate da Feira da Paz. O evento foi uma combinação de
+              protesto e comemoração pelo Dia do Skate, com uma grande
+              quantidade de manobras e uma forte presença da comunidade
+              skatista.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    
-
-
 
     <!-- modal desafio  skate club  -->
-    <div class="modal fade" id="modalEvento4" tabindex="-1" aria-labelledby="modalEvento4Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalEvento4Label">>DESAFIO SKATE_CLUB #3</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselEvento4" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://i.ibb.co/4Sxvyrj/1.jpg" class="d-block w-100" alt="Evento 4 - Imagem 1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/56nCN2C/2.jpg" class="d-block w-100" alt="Evento 4 - Imagem 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/9bbvK4p/3.jpg" class="d-block w-100" alt="Evento 4 - Imagem 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/H4yDzkR/4.jpg" class="d-block w-100" alt="Evento 4 - Imagem 4">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/GHQKB4C/5.jpg" class="d-block w-100" alt="Evento 4 - Imagem 5">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/PQ4gC6k/6.jpg" class="d-block w-100" alt="Evento 4 - Imagem 6">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/zN2Wrx0/7.jpg" class="d-block w-100" alt="Evento 4 - Imagem 7">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/WF3cv47/9.jpg" class="d-block w-100" alt="Evento 4 - Imagem 8">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/r5LFj31/8.jpg" class="d-block w-100" alt="Evento 4 - Imagem 9">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://i.ibb.co/Z69yL7h/10.jpg" class="d-block w-100" alt="Evento 4 - Imagem 10">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento4" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento4" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    <p><strong>Data:</strong> 28 de junho de 2015</p>
-                    <p><strong>Local:</strong>  Rua Pedro Lessa, 586 - Governador Valadares MG</p>
-                    <p><strong>Descrição:</strong> >O DESAFIO SKATE_CLUB #3 ocorreu no dia 28 de junho de 2015, em um desafio que reuniu skatistas valadarenses em um local desafiador. Com inscrições a partir de 1 litro de leite para doação, o evento destacou uma grande manobra e premiou o vencedor com um troféu, proporcionando uma experiência emocionante e solidária.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
- <!-- modal MAG  -->
- <div class="modal fade" id="modalEvento5" tabindex="-1" aria-labelledby="modalEvento5Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div
+      class="modal fade"
+      id="modalEvento4"
+      tabindex="-1"
+      aria-labelledby="modalEvento4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalEvento5Label">>MAG Valadares #2</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="carouselEvento5" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://i.ibb.co/BjrDXxF/29.jpg" class="d-block w-100" alt="Evento 5 - Imagem 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/M7MTK2b/4.jpg" class="d-block w-100" alt="Evento 5 - Imagem 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/sqhdh68/5.jpg" class="d-block w-100" alt="Evento 5 - Imagem 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/9Y0v76M/6.jpg" class="d-block w-100" alt="Evento 5 - Imagem 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/zHm7vsZ/7.jpg" class="d-block w-100" alt="Evento 5 - Imagem 5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/d29JzpF/8.jpg" class="d-block w-100" alt="Evento 5 - Imagem 6">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/2sPRFQd/9.jpg" class="d-block w-100" alt="Evento 5 - Imagem 7">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/3WdMZZq/10.jpg" class="d-block w-100" alt="Evento 5 - Imagem 8">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/YbHG5fg/12.jpg" class="d-block w-100" alt="Evento 5 - Imagem 9">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/stTRTnL/17.jpg" class="d-block w-100" alt="Evento 5 - Imagem 10">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/FhLrpKV/18.jpg" class="d-block w-100" alt="Evento 5 - Imagem 11">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/JpqG9Qs/19.jpg" class="d-block w-100" alt="Evento 5 - Imagem 12">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/jV7DYBy/22.jpg" class="d-block w-100" alt="Evento 5 - Imagem 13">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/XsvRMvk/24.jpg" class="d-block w-100" alt="Evento 5 - Imagem 14">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/cb7b5Kb/28.jpg" class="d-block w-100" alt="Evento 5 - Imagem 15">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/BjrDXxF/1.jpg" class="d-block w-100" alt="Evento 5 - Imagem 16">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/3z3BzL8/32.jpg" class="d-block w-100" alt="Evento 5 - Imagem 17">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/XSW3b1k/44.jpg" class="d-block w-100" alt="Evento 5 - Imagem 18">
-                        </div>
-                      
-
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento5" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento5" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento4Label">
+              >DESAFIO SKATE_CLUB #3
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento4" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/4Sxvyrj/1.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 1"
+                  />
                 </div>
-                <p><strong>Data:</strong> 30 de agosto de 2014</p>
-                <p><strong>Local:</strong>  R. Euryto Orlando Bonesi - Morada do Acampamento</p>
-                <p><strong>Descrição:</strong> >O MAG Valadares, realizado no dia 30 de agosto de 2014, foi uma celebração vibrante na COMUNIDADE da GRAÇA. A partir das 20h, a comunidade se reuniu para uma noite cheia de skate, reggae, e um espírito de gratidão e amizade. O evento destacou-se pela sua energia positiva e pela celebração da cultura local.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/56nCN2C/2.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/9bbvK4p/3.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/H4yDzkR/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/GHQKB4C/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/PQ4gC6k/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/zN2Wrx0/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/WF3cv47/9.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/r5LFj31/8.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Z69yL7h/10.jpg"
+                    class="d-block w-100"
+                    alt="Evento 4 - Imagem 10"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 28 de junho de 2015</p>
+            <p>
+              <strong>Local:</strong> Rua Pedro Lessa, 586 - Governador
+              Valadares MG
+            </p>
+            <p>
+              <strong>Descrição:</strong> >O DESAFIO SKATE_CLUB #3 ocorreu no
+              dia 28 de junho de 2015, em um desafio que reuniu skatistas
+              valadarenses em um local desafiador. Com inscrições a partir de 1
+              litro de leite para doação, o evento destacou uma grande manobra e
+              premiou o vencedor com um troféu, proporcionando uma experiência
+              emocionante e solidária.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-
-  <!-- modal camp marilac  -->
-  <div class="modal fade" id="modalEvento6" tabindex="-1" aria-labelledby="modalEvento6Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- modal MAG  -->
+    <div
+      class="modal fade"
+      id="modalEvento5"
+      tabindex="-1"
+      aria-labelledby="modalEvento5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalEvento6Label">Campeonato de Skate em Marilac</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="carouselEvento6" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://i.ibb.co/zXTZqBw/1.jpg" class="d-block w-100" alt="Evento 6 - Imagem 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/bRmPmSk/2.jpg" class="d-block w-100" alt="Evento 6 - Imagem 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/0j2cLQR/3.jpg" class="d-block w-100" alt="Evento 6 - Imagem 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/RTSLQ08/4.jpg" class="d-block w-100" alt="Evento 6 - Imagem 5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/vHh1wHm/5.jpg" class="d-block w-100" alt="Evento 6 - Imagem 6">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/XX8qgtv/6.jpg" class="d-block w-100" alt="Evento 6 - Imagem 7">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/cTrcsLb/7.jpg" class="d-block w-100" alt="Evento 6 - Imagem 8">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/41Cj9d6/8.jpg" class="d-block w-100" alt="Evento 6 - Imagem 9">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/ZMHfQ54/9.jpg" class="d-block w-100" alt="Evento 6 - Imagem 10">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/6tdjRgK/11.jpg" class="d-block w-100" alt="Evento 6 - Imagem 11">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/Wg5fYSZ/12.jpg" class="d-block w-100" alt="Evento 6 - Imagem 12">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/NmLW56g/13.jpg" class="d-block w-100" alt="Evento 6 - Imagem 13">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/2qRLzB0/14.jpg" class="d-block w-100" alt="Evento 6 - Imagem 14">
-                        </div>
-                       
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento6" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento6" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento5Label">
+              >MAG Valadares #2
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento5" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/BjrDXxF/29.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 1"
+                  />
                 </div>
-                <p><strong>Data:</strong>  29 de setembro de 2019</p>
-                <p><strong>Local:</strong>  Praça Central, Marilac - MG</p>
-                <p><strong>Descrição:</strong> >O Campeonato de Skate em Marilac, realizado no dia 29 de setembro de 2019, marcou a inauguração da nova pista de skate da cidade. Com uma premiação total de R$5.000 e uma estrutura bem organizada, o evento apresentou várias categorias, incluindo a Best Trick, e ofereceu uma experiência memorável para todos os participantes.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/M7MTK2b/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/sqhdh68/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/9Y0v76M/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/zHm7vsZ/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/d29JzpF/8.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/2sPRFQd/9.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/3WdMZZq/10.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/YbHG5fg/12.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/stTRTnL/17.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/FhLrpKV/18.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/JpqG9Qs/19.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 12"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/jV7DYBy/22.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 13"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/XsvRMvk/24.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 14"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/cb7b5Kb/28.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 15"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/BjrDXxF/1.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 16"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/3z3BzL8/32.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 17"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/XSW3b1k/44.jpg"
+                    class="d-block w-100"
+                    alt="Evento 5 - Imagem 18"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 30 de agosto de 2014</p>
+            <p>
+              <strong>Local:</strong> R. Euryto Orlando Bonesi - Morada do
+              Acampamento
+            </p>
+            <p>
+              <strong>Descrição:</strong> >O MAG Valadares, realizado no dia 30
+              de agosto de 2014, foi uma celebração vibrante na COMUNIDADE da
+              GRAÇA. A partir das 20h, a comunidade se reuniu para uma noite
+              cheia de skate, reggae, e um espírito de gratidão e amizade. O
+              evento destacou-se pela sua energia positiva e pela celebração da
+              cultura local.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
- 
 
-  <!-- modal bera skate day  -->
-    
-    
-  <div class="modal fade" id="modalEvento7" tabindex="-1" aria-labelledby="modalEvento7Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- modal camp marilac  -->
+    <div
+      class="modal fade"
+      id="modalEvento6"
+      tabindex="-1"
+      aria-labelledby="modalEvento6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalEvento7Label">Bera Skate Day</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="carouselEvento7" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://i.ibb.co/JvKWMFV/Whats-App-Image-2024-08-29-at-20-16-51.jpg" class="d-block w-100" alt="Evento 7 - Imagem 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/JF7SgHn/Whats-App-Image-2024-08-29-at-20-16-59.jpg" class="d-block w-100" alt="Evento 7 - Imagem 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/tHQjBcq/Whats-App-Image-2024-08-29-at-20-17-13.jpg" class="d-block w-100" alt="Evento 7 - Imagem 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://i.ibb.co/NWpDbHr/Whats-App-Image-2024-08-29-at-20-17-26.jpg" class="d-block w-100" alt="Evento 7 - Imagem 4">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvento7" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEvento7" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento6Label">
+              Campeonato de Skate em Marilac
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento6" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/zXTZqBw/1.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 1"
+                  />
                 </div>
-                <p><strong>Data:</strong>   27 de Junho de 2021</p>
-                <p><strong>Local:</strong> Beira Mar, São José - SC</p>
-                <p><strong>Descrição:</strong> O Go Skate Day Bera, realizado na Beira Mar de São José em SC, foi um evento repleto de atividades emocionantes. Com campeonatos de manobras, rampas, corrimões, salto em altura e distância, o evento também ofereceu churrasco gratuito e distribuição de brindes, proporcionando um dia inesquecível para todos os participantes.</p>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/bRmPmSk/2.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/0j2cLQR/3.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/RTSLQ08/4.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/vHh1wHm/5.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 6"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/XX8qgtv/6.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 7"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/cTrcsLb/7.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 8"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/41Cj9d6/8.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 9"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/ZMHfQ54/9.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 10"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/6tdjRgK/11.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 11"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/Wg5fYSZ/12.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 12"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/NmLW56g/13.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 13"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/2qRLzB0/14.jpg"
+                    class="d-block w-100"
+                    alt="Evento 6 - Imagem 14"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento6"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento6"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
+            <p><strong>Data:</strong> 29 de setembro de 2019</p>
+            <p><strong>Local:</strong> Praça Central, Marilac - MG</p>
+            <p>
+              <strong>Descrição:</strong> >O Campeonato de Skate em Marilac,
+              realizado no dia 29 de setembro de 2019, marcou a inauguração da
+              nova pista de skate da cidade. Com uma premiação total de R$5.000
+              e uma estrutura bem organizada, o evento apresentou várias
+              categorias, incluindo a Best Trick, e ofereceu uma experiência
+              memorável para todos os participantes.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- modal bera skate day  -->
 
+    <div
+      class="modal fade"
+      id="modalEvento7"
+      tabindex="-1"
+      aria-labelledby="modalEvento7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEvento7Label">Bera Skate Day</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselEvento7" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://i.ibb.co/JvKWMFV/Whats-App-Image-2024-08-29-at-20-16-51.jpg"
+                    class="d-block w-100"
+                    alt="Evento 7 - Imagem 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/JF7SgHn/Whats-App-Image-2024-08-29-at-20-16-59.jpg"
+                    class="d-block w-100"
+                    alt="Evento 7 - Imagem 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/tHQjBcq/Whats-App-Image-2024-08-29-at-20-17-13.jpg"
+                    class="d-block w-100"
+                    alt="Evento 7 - Imagem 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://i.ibb.co/NWpDbHr/Whats-App-Image-2024-08-29-at-20-17-26.jpg"
+                    class="d-block w-100"
+                    alt="Evento 7 - Imagem 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselEvento7"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselEvento7"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <p><strong>Data:</strong> 27 de Junho de 2021</p>
+            <p><strong>Local:</strong> Beira Mar, São José - SC</p>
+            <p>
+              <strong>Descrição:</strong> O Go Skate Day Bera, realizado na
+              Beira Mar de São José em SC, foi um evento repleto de atividades
+              emocionantes. Com campeonatos de manobras, rampas, corrimões,
+              salto em altura e distância, o evento também ofereceu churrasco
+              gratuito e distribuição de brindes, proporcionando um dia
+              inesquecível para todos os participantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-  
-    
-</body>
+  </body>
 </html>

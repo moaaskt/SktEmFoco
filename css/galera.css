@@ -40,3 +40,11 @@ h1 {
 .modal-body p {
     margin: 0.5rem 0;
 }
+
+.custom-title {
+    color: #8e44ad; /* Cor roxa */
+}
+
+.custom-text {
+    color: #2ecc71; /* Cor verde */
+}
