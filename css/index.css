@@ -98,6 +98,16 @@ body {
 #eventos .img-fluid {
     border: 2px solid #eeeaf1; /* Borda roxa ao redor das imagens */
 }
+
+.flyer-evento {
+    max-width: 60%; /* Para garantir que a imagem seja responsiva */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px; /* Adiciona bordas arredondadas ao flyer */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra ao redor do flyer */
+}
+
+
 /* Estilo para o texto em movimento */
 .moving-text {
     display: inline-block;
